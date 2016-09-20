@@ -49,7 +49,8 @@ end_no=$2
 
 
 base_url="raptorx.uchicago.edu/ContactMap/myjobs/"
-current_no=$begin_no
+current_no=$start_no
+
 
 while [ $current_no -le $end_no ]
 do
