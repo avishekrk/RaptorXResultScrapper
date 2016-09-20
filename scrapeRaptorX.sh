@@ -6,7 +6,7 @@
 
 PROGRAM=$(basename $0)
 
-usage="usage : ${PROGRAM} [options] ARG1 ARG2
+usage="usage : ${PROGRAM} [options] begin_no end_no
 
 Downloads RaptorX results.
 
@@ -14,8 +14,8 @@ Options:
 
 -h              show this help
 -d DIRECTORY    download results in the specified directory
-ARG1 beginning of sequence
-ARG2 end of sequence
+begin_no beginning of sequence
+end_no end of sequence
 """
 
 function check_directory() {
@@ -49,10 +49,6 @@ end_no=$2
 
 
 base_url="raptorx.uchicago.edu/ContactMap/myjobs/"
-
-begin_no=203625 #start id
-end_no=203641   #end id
-
 current_no=$begin_no
 
 while [ $current_no -le $end_no ]
